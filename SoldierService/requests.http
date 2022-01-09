@@ -1,0 +1,47 @@
+GET http://localhost:8082/api/soldiers
+
+###
+
+GET http://localhost:8082/api/soldiers/2
+
+###
+
+GET http://localhost:8082/api/soldiers/6
+
+###
+
+POST http://localhost:8082/api/soldiers
+Content-Type: application/json
+
+{
+  "name": "Johnny Test",
+  "rank": "private",
+  "age": 18,
+  "militaryUnit": "2137"
+}
+
+###
+
+DELETE http://localhost:8082/api/soldiers/5
+
+###
+
+PUT http://localhost:8082/api/soldiers/6
+Content-Type: application/json
+
+{
+  "name": "Jane Test",
+  "rank": "Sergeant",
+  "age": 29
+}
+
+###
+
+
+DELETE http://localhost:8082/api/militaryUnits/4432
+
+###
+
+GET http://localhost:8082/api/militaryUnits/4432/soldiers
+
+###

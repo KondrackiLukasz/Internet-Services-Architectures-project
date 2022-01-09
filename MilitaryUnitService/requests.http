@@ -1,0 +1,30 @@
+GET http://localhost:8081/api/militaryUnits
+
+###
+
+GET http://localhost:8081/api/militaryUnits/2137
+
+###
+
+POST http://localhost:8081/api/militaryUnits
+Content-Type: application/json
+
+{
+  "name": "2137",
+  "maxCapacity": 420
+}
+
+###
+
+DELETE http://localhost:8081/api/militaryUnits/2137
+
+###
+
+
+PUT http://localhost:8081/api/militaryUnits/2137
+Content-Type: application/json
+
+{
+  "maxCapacity": 100
+}
+###

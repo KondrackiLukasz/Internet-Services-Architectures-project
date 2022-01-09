@@ -1,0 +1,21 @@
+services:
+  soldiers:
+    build: ./SoldierService
+  units:
+    build: ./MilitaryUnitService
+    depends_on:
+      - soldiers
+  gateway:
+    build: ./Gateway
+    # depends_on:
+    #   - soldiers
+    #   - units
+  proxy:
+    build: ./ReverseProxy
+    # depends_on:
+    #   - frontend
+    #   - gateway
+    ports:
+      - "8080:8080"
+  frontend:
+    build: ./Front
