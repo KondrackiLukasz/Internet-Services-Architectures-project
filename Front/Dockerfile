@@ -1,6 +1,5 @@
-FROM node:17.3-alpine3.14
+FROM node:17.3-alpine
 WORKDIR /server
-COPY ./package.json .
-RUN npm install
+RUN npm -g install http-server
 COPY . .
-CMD npm run dev
+CMD http-server -p 8080 -c-1

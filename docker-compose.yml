@@ -7,14 +7,14 @@ services:
       - soldiers
   gateway:
     build: ./Gateway
-    # depends_on:
-    #   - soldiers
-    #   - units
+    depends_on:
+      - soldiers
+      - units
   proxy:
     build: ./ReverseProxy
-    # depends_on:
-    #   - frontend
-    #   - gateway
+    depends_on:
+      - frontend
+      - gateway
     ports:
       - "8080:8080"
   frontend:
