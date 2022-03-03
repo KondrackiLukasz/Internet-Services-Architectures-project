@@ -17,4 +17,4 @@ Run the project:
 docker compose up
 ```
 It might take a while, since docker needs to download images and compile source code inside them.
-You can interact with project on http://localhost:8080/ in your browser.
+You can interact with the project on http://localhost:8080/ in your browser.
